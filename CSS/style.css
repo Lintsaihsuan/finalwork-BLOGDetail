@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*after{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans TC";
+    line-height: 1.5;
+    width: 100%;
+    margin: 0 auto;
+}
+.header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.header a{
+    font-size: 28px;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color:black;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.intro{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    background: #FBFBFB;
+    align-items: stretch;
+    border: 1px solid #6C757D;
+
+}
+.intro img{
+    width: 50%;
+}
+.hello{
+    width: 636px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 24px;
+}
+.hello time{
+    margin: 2px 0px;
+}
+.hello h2 {
+    color: blue; 
+    font-size: 24px;
+    margin: 4px 0px;
+}
+.hello h3 {
+    font-weight: bold;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 4px 0px;
+}
+.footer{
+    background: #FBFBFB;
+    width: 100%;
+    
+}
+.footer-inner{
+    display: flex;
+    height: 208px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: clamp(16px, 5vw, 312px);
+    padding-right: clamp(16px, 5%, 312px);  
+}
+.mail{
+    flex:1 1 auto;
+    min-width: 0;
+    margin-left: 12px;
+}
+.mail a{
+    display: inline-block;
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+}
+.socialmedia{
+    display: flex;
+    flex:0 0 auto;
+    width: 236px;
+    height: 44px;
+    justify-content: center;
+    margin: 0 12px;
+}
+.socialmedia a{
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+}
+@media (max-width:992px){
+    .footer{
+    display: none;}
+}
+@media (max-width:767px){
+    .footer{
+    display: none;}
+    }
+.rights{
+    text-align: center;
+    margin: 24px 0px;
+}
